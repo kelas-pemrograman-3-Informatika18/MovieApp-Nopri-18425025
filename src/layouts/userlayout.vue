@@ -9,6 +9,7 @@
       <q-btn flat size="medium" :to="{ name:'homeUser' }">Home</q-btn>
       <q-btn flat size="medium" :to="{ name:'MyOrder' }">pesanan saya</q-btn>
       <q-btn flat size="medium" :to="{ name: 'about'}">tentang</q-btn>
+      <q-btn flat size="medium" :to="{ name: 'profile'}">Profile</q-btn>
       <q-btn flat @click="logout()" size="medium">logout</q-btn>
       </div>
       <q-btn flat round size="medium" icon="shopping_cart"/>

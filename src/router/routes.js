@@ -11,7 +11,8 @@ const routes = [
       { path: 'input', name: 'inputBarang', component: () => import('pages/admin/inputbarang.vue') },
       { path: 'datauser', name: 'dataUser', component: () => import('pages/admin/datauser.vue') },
       { path: 'datadvd', name: 'dataDVD', component: () => import('pages/admin/datadvd.vue') },
-      { path: 'formedit/:id', name: 'formedit', component: () => import('pages/admin/formedit.vue') }
+      { path: 'formedit/:id', name: 'formedit', component: () => import('pages/admin/formedit.vue') },
+      { path: 'profiles', name: 'profiles', component: () => import('pages/admin/profiles.vue') }
     ]
   },
   {
@@ -23,7 +24,8 @@ const routes = [
     children: [
       { path: '', name: 'homeUser', component: () => import('pages/user/index.vue') },
       { path: 'MyOrder', name: 'MyOrder', component: () => import('pages/user/MyOrder.vue') },
-      { path: 'about', name: 'about', component: () => import('pages/user/about.vue') }
+      { path: 'about', name: 'about', component: () => import('pages/user/about.vue') },
+      { path: 'profile', name: 'profile', component: () => import('pages/user/profile.vue') }
     ]
   },
   {

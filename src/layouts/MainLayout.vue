@@ -6,11 +6,11 @@
         <q-space></q-space>
         <q-btn flat round>
           <q-avatar>
-          <q-img src="https://cdn.quasar.dev/img/avatar.png"/>
+          <q-img src="~assets/ddplk9t-1b198c3d-d63d-4125-aa12-0c1e5aff9870.png"/>
           </q-avatar>
           <q-menu>
           <q-list style="min-width: 100px">
-            <q-item clickable v-close-popup>
+            <q-item clickable v-close-popup :to="{ name: 'profiles' }">
               <q-item-section>Profile</q-item-section>
             </q-item>
             <q-item clickable v-close-popup @click="logout()">
@@ -33,7 +33,7 @@
             <q-item class="justify-center text-center q-mt-md q-mb-md">
               <div>
                 <q-avatar size="120px">
-                  <q-img src="https://cdn.quasar.dev/img/avatar.png"/>
+                  <q-img src="~assets/ddplk9t-1b198c3d-d63d-4125-aa12-0c1e5aff9870.png"/>
                 </q-avatar>
                 <div class="text-weight-bold q-mt-md">{{ $q.localStorage.getItem('datauser').namaLengkap }}</div>
                 <div>Aplikasi Penjualan Film</div>
@@ -50,7 +50,7 @@
             </q-item>
             <q-item clickable active-class="active" v-ripple exact :to="{ name: 'dataDVD' }">
               <q-item-section avatar>
-                <q-icon name="dashboard"/>
+                <q-icon name="play_circle_filled"/>
               </q-item-section>
               <q-item-section>
                 <q-item-label>Data DVD</q-item-label>
